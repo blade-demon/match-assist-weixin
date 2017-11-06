@@ -1,0 +1,30 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.wrapper+.wrapper {
+    margin-top: 10px;
+}
+
+.video-container {
+    max-width: 100%;
+    text-align: center;
+}
+
+video {
+    width: 100%;
+}
+
+.player-Info-wrapper {
+    border: 2px solid;
+    margin: 0;
+}
+
+.question+.question {
+    margin: 10px;
+}
