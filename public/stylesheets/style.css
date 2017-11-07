@@ -1,10 +1,18 @@
 body {
-    padding: 50px;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
     color: #00B7FF;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.text-light {
+    color: #c9c9c9;
 }
 
 .wrapper+.wrapper {
@@ -27,4 +35,337 @@ video {
 
 .question+.question {
     margin: 10px;
+}
+
+.small-font {
+    font-size: 12px;
+    -webkit-transform-origin-x: 0;
+    -webkit-transform: scale(0.90);
+    transform: scale(0.9);
+}
+
+.smallsize-font {
+    font-size: 10.8px;
+}
+
+
+/* Profile wrapper*/
+
+.profile_wrapper {
+    background: url("../images/profile-bg.jpg") center center;
+    background-size: cover;
+    text-align: center;
+}
+
+.profile_headimg {
+    margin: 20px auto;
+    width: 30%;
+}
+
+
+/* Divider */
+
+.divider-container {
+    width: 100%;
+    margin: 10px auto;
+}
+
+.divider-container h3.title {
+    font-size: 0.5em;
+    margin-bottom: 3em;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1.1;
+}
+
+.divider-container h3.title span {
+    display: block;
+    font-size: 1.5rem;
+    color: #151515;
+    position: relative;
+}
+
+.divider-container h3.title span:before,
+.divider-container h3.title span:after {
+    content: '';
+    position: absolute;
+    top: 54%;
+    background: #b1b0b0;
+    width: 38%;
+    height: 1px;
+}
+
+.divider-container h3.title span:before {
+    left: 0%;
+}
+
+.divider-container h3.title span:after {
+    right: 0%;
+}
+
+
+/* Ribbon */
+
+#tournament1 {
+    margin: 20px auto;
+    width: 90%;
+    height: 200px;
+    background: url('/images/tournament-cover.jpg') center center no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 90;
+}
+
+#tournament2 {
+    margin: 20px auto;
+    width: 90%;
+    height: 200px;
+    background: url('/images/tournament-cover-2.jpg') center center no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 90;
+}
+
+#tournament3 {
+    margin: 20px auto;
+    width: 90%;
+    height: 200px;
+    background: url('/images/tournament-leaderboard-cover.jpg') center center no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: -1;
+}
+
+.ribbon-wrapper-red {
+    width: 85px;
+    height: 88px;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.ribbon-red {
+    font: 15px Sans-Serif;
+    color: #fff;
+    text-align: center;
+    text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    position: relative;
+    padding: 0;
+    left: -2px;
+    top: 15px;
+    width: 120px;
+    background-color: #e71d2b;
+    color: white;
+    -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+.ribbon-red:before,
+.ribbon-red:after {
+    content: "";
+    border-top: 3px solid #6e8900;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    position: absolute;
+    bottom: -3px;
+}
+
+.ribbon-red:before {
+    left: 0;
+}
+
+.ribbon-red:after {
+    right: 0;
+}
+
+
+/* Loader */
+
+.loader {
+    font-size: 20px;
+    position: relative;
+    width: 0.8em;
+    height: 1.2em;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.dot {
+    background: #929292;
+    position: absolute;
+}
+
+.dot1 {
+    width: 0.6em;
+    height: 0.6em;
+    border-radius: 0.6em;
+}
+
+.dot2 {
+    top: 0.8em;
+    left: 0.1em;
+    width: 0.4em;
+    height: 0.4em;
+    border-radius: 0.4em;
+}
+
+.dot3 {
+    top: 1.4em;
+    left: 0.2em;
+    width: 0.2em;
+    height: 0.2em;
+    border-radius: 0.2em;
+}
+
+
+/* Match result list*/
+
+.match-result-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 15px;
+    padding-top: 10px;
+}
+
+.match-result-wrapper {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #e5e4e4;
+    padding-top: 10px;
+}
+
+.match-result-wrapper-body {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.match-result-wrapper-footer {
+    display: flex;
+    flex: 0 1 auto;
+}
+
+.match-result-wrapper-body-left {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+}
+
+.match-result-wrapper-body-right {
+    display: flex;
+    flex: 1 1 auto;
+    color: red;
+    font-size: 2em;
+    display: -webkit-flex;
+    align-items: center;
+    max-width: 100px;
+    float: right;
+    justify-content: flex-end;
+}
+
+.player-detail {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.player-avatar {
+    width: 40px;
+    height: 40px;
+    flex: 0 1 auto;
+    align-items: center;
+}
+
+.player-nickname {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    width: 120px
+}
+
+.player-score {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    font-size: 1.5em;
+    margin-bottom: 0px;
+    justify-content: center;
+}
+
+.win {
+    color: red;
+}
+
+.lose {
+    color: blue
+}
+
+.bold-font {
+    font-weight: bold;
+}
+
+.match-date {
+    flex: 0 1 auto;
+}
+
+.match-location {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+
+/* Linear gradient */
+
+.linear-gradient-wrapper {
+    color: #F2AE11;
+    font-size: 0.4em;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.1;
+    margin: 10px auto;
+}
+
+.linear-gradient-wrapper span {
+    display: block;
+    font-size: 3em;
+    color: #212121;
+    position: relative;
+}
+
+.linear-gradient-wrapper span:before,
+.linear-gradient-wrapper span:after {
+    content: '';
+    position: absolute;
+    top: 52%;
+    width: 32%;
+    height: 2px;
+}
+
+.linear-gradient-wrapper span:before {
+    left: 5%;
+    background: linear-gradient(to right, #ccc, #000);
+}
+
+.linear-gradient-wrapper span:after {
+    right: 5%;
+    background: linear-gradient(to left, #ccc, #000);
 }

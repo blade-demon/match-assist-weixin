@@ -12,41 +12,61 @@
 </head>
 
 <body>
-    <div class="container">
+    <div>
         <div class="row">
-            <h2>个人信息</h2>
-            <hr>
-            <div class="col-md-10 col-md-offset-1">
-                <p>姓名：张三</p>
-                <p>ID:8898974</p>
-                <p>金币数量：0</p>
-                <p>交易记录：<a href="/consume_history">查看</a></p>
-            </div>
-        </div>
-        <div class="row">
-            <h2>赛程</h2>
-            <hr>
-            <div class="col-md-10 col-md-offset-1">
-                <p>暂无赛程安排</p>
-            </div>
-        </div>
-        <div class="row">
-            <h3>推荐的比赛</h3>
-            <hr>
-            <div class="container">
-                <div class="wrapper" style="border: 1px solid">
-                    <img src="/images/splashbg.jpg" alt="" style="width:100%">
-                    <h5>亚洲锦标赛1</h5>
-                    <p>场次：0</p>
-                    <p>胜率：-</p>
-                    <a type="button" href="#">参加比赛</a>
+            <div class="col-xs-12" style="padding:0px 0px">
+                <div class="profile_wrapper">
+                    <img class="profile_headimg" src="images/headimg.jpg" alt="">
+                    <p style="color: white; font-size: 1.2em">祖国的一朵枪</p>
+                    <p style="color: white; font-size: 1em">ID:8898974</p>
+                    <p style="color: white; display:inline-block; padding: 0px 10%;">金豆 <span style="font-size: 2rem; display:inline-block; margin-top:5px; padding-left: 10px">100</span></p>
+                    <a style="color: white; display:inline-block; padding: 0px 10%;border-left: 1px solid" href="/consume_history">查看记录 <span style="padding-left: 10px">> </span></a>
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="divider-container">
+                <h3 class="title"><span> 我的赛程 </span>
+                </h3>
+            </div>
+            <div class="col-xs-12 text-light">
+                <p class="text-left">我的比赛呢？</p>
+                <p class="text-right">我想蒂花之秀！</p>
+                <p class="text-left">你这么怂哪里的比赛？</p>
+                <p class="text-right">请开始你的表演！</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="divider-container">
+                <h3 class="title"><span> 其他赛事 </span>
+                </h3>
+            </div>
+            <div id="tournament1" class="wrapper " style="border: 0px solid ">
+                <div class="ribbon-wrapper-red ">
+                    <div class="ribbon-red ">进行中</div>
+                </div>
+            </div>
+
+            <div id="tournament2" class="wrapper " style="border: 0px solid ">
+                <div class="ribbon-wrapper-red ">
+                    <div class="ribbon-red ">进行中</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-4 text-center">
+                <p style="color:#929292">敬请期待</p>
+            </div>
+            <div class="loader">
+                <div class="dot dot1"></div>
+                <div class="dot dot2"></div>
+                <div class="dot dot3"></div>
+            </div>
+        </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa " crossorigin="anonymous "></script>
 </body>
 
 </html>
