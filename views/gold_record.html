@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>电竞助手</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/stylesheets/style.css">
+</head>
+
+<body style="background: #eae9e9;">
+    <div class="container profile-container">
+        <div class="heading-left"> <img src="http://via.placeholder.com/80x80" alt="" style="border-radius: 40px; width: 100%; box-shadow: 0px 0px 15px #ccc"> </div>
+        <div class="heading-middle text-left">
+            <p>会飞的猪</p>
+            <p>金豆: <span style="color: #fb0d0d">100</span></p>
+        </div>
+        <div class="heading-right">
+            <div style="display: inline-block; color: #c6c6c6; margin: 25px 10px"> <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> </div>
+        </div>
+        <div class="heading-right"> <img src="/public/images/store-icon.png" alt="" style="width: 50px;">
+            <p class="text-center" style="margin-top: 5px; font-size: 60%">金豆商城</p>
+        </div>
+    </div>
+    <div class="container guess-record-container">
+        <div class="tabs-wrapper">
+            <div class="col-xs-6 text-center tabs-header">
+                <input id="tab1" type="radio" name="tabs" value="record" checked>
+                <label for="tab1">竞猜记录</label>
+            </div>
+
+            <div class="col-xs-6  text-center tabs-header">
+                <input id="tab2" type="radio" name="tabs" value="detail">
+                <label for="tab2">金豆明细</label>
+
+            </div>
+
+            <section id="content1" style="display: block; padding-top: 30px">
+                <ul class="list-group" style="margin-bottom: 0px">
+                    <li class="list-group-item list-item">
+                        <div class="item-left">
+                            <h5>谦虚公子 VS 我就是帅</h5>
+                            <p class="small">100金豆</p>
+                            <p class="small">2017-11-21 13:52</p>
+                        </div>
+                        <div class="item-right">
+                            <p class="grey">等待开奖 <span class="glyphicon glyphicon-chevron-right" style="padding-left: 10px"></span></p>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-item">
+                        <div class="item-left">
+                            <h5>谦虚公子 VS 我就是帅</h5>
+                            <p class="small">100金豆</p>
+                            <p class="small">2017-11-21 13:52</p>
+                        </div>
+                        <div class="item-right">
+                            <p>已开奖 <span class="glyphicon glyphicon-chevron-right" style="padding-left: 10px"></span></p>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item list-item">
+                        <div class="item-left">
+                            <h5>谦虚公子 VS 我就是帅</h5>
+                            <p class="small">100金豆</p>
+                            <p class="small">2017-11-21 13:52</p>
+                        </div>
+                        <div class="item-right">
+                            <p>已开奖 <span class="glyphicon glyphicon-chevron-right" style="padding-left: 10px"></span></p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section id="content2" style="display: none; padding-top: 30px">
+                <ul class="list-group" style="margin-bottom: 0px">
+                    <li class="list-group-item list-item">
+                        <div class="item-left">
+                            <h5>关注公众号</h5>
+                            <p class="small">2017-11-21 13:52</p>
+                        </div>
+                        <div class="item-right">
+                            <p><span class="gold-number red">+100&nbsp;</span>金豆</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-item">
+                        <div class="item-left">
+                            <h5>竞猜投注</h5>
+                            <p class="small">2017-11-21 13:52</p>
+                        </div>
+                        <div class="item-right">
+                            <p><span class="gold-number">-100&nbsp;</span>金豆</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-item">
+                        <div class="item-left">
+                            <h5>竞猜获取</h5>
+                            <p class="small">2017-11-21 13:52</p>
+                        </div>
+                        <div class="item-right">
+                            <p><span class="gold-number red" style="padding-left: 10px;">+100&nbsp;</span>金豆</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-item">
+                        <div class="item-left">
+                            <h5>竞猜损失</h5>
+                            <p class="small">2017-11-21 13:52</p>
+                        </div>
+                        <div class="item-right">
+                            <p><span class="gold-number">-100&nbsp;</span>金豆</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $(function() {
+        console.log("js works.");
+        // 检测radio选中的值
+        $("input[name='tabs']").change(function() {
+            if ($(this).val() === 'record') {
+                $("#content1").css("display", "block");
+                $("#content2").css("display", "none");
+            } else {
+                $("#content1").css("display", "none");
+                $("#content2").css("display", "block");
+            }
+        });
+    });
+</script>
+</html>

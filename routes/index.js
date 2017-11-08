@@ -36,6 +36,14 @@ router.get('/video', function(req, res, next) {
     res.render('video');
 });
 
+router.get('/videos', function(req, res, next) {
+    res.render('videos');
+});
+
+router.get('/recommend_videos', function(req, res, next) {
+    res.render('recommend_videos');
+});
+
 /**
  * 查看直播
  */
@@ -54,6 +62,13 @@ router.get('/consume_history', function(req, res, next) {
  */
 router.get('/no-live', function(req, res, next) {
     res.render('no-live');
+});
+
+/**
+ * 竞猜详情
+ */
+router.get('/guess', function(req, res, next) {
+    res.render('guess');
 });
 
 /**

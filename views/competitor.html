@@ -7,53 +7,116 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>电竞助手</title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <h2>玩家信息</h1>
-                <hr>
-                <div class="col-md-10 col-md-offset-1">
-                    <p>姓名：李四</p>
-                    <p>ID:8898974</p>
-                    <p>场次：1000</p>
-                    <p>胜率：57%</p>
+    <div class="row" style="position: relative; margin-top: 50px">
+        <div class="col-xs-6 left"></div>
+        <div class="col-xs-6 right"></div>
+        <div class="col-xs-12 text-center" style="position: absolute; top: -50px">
+            <div class="middle">
+                <img class="head-img" src="http://via.placeholder.com/80x80" alt="">
+                <p>黑社会大佬</p>
+                <span>ID：65374890</span>
+                <img src="images/record.jpg" alt="" style="width: 100%">
+                <div class="col-xs-4 text-center">
+                    总场次
+                    <span>0</span>
                 </div>
-        </div>
-        <div class="row">
-            <h2>选手比赛视频</h1>
-                <hr>
-                <div class="container">
-                    <ul>
-                        <li>比赛视频1
-                            <a type="button" href="/video" class="btn btn-default btn-sm">
-                                <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
-                            </a>
-                        </li>
-                        <li>比赛视频2
-                            <a type="button" href="/video" class="btn btn-default btn-sm">
-                                <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
-                            </a>
-                        </li>
-                        <li>比赛视频3
-                            <a type="button" href="/video" class="btn btn-default btn-sm">
-                                <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
-                            </a>
-                        </li>
-                        <li>比赛视频4
-                            <a type="button" href="/video" class="btn btn-default btn-sm">
-                                <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="col-xs-4 text-center">
+                    <span>0</span> 胜
+                    <span>0</span> 负
                 </div>
+                <div class="col-xs-4 text-center">
+                    胜率
+                    <span>0</span>
+                </div>
+                <div class="col-xs-12" style="padding: 0px 0px">
+                    <div class="match-result-list" style="margin: 0">
+                        <div class="match-result-wrapper">
+                            <div class="match-result-wrapper-body">
+                                <div class="match-result-wrapper-body-left">
+                                    <div class="player-detail">
+                                        <img class="player-avatar" src="images/headimg.jpg" alt="">
+                                        <p class="player-nickname">孙悟空</p>
+                                        <p class="player-score win">36</p>
+                                    </div>
+                                    <div class="player-detail">
+                                        <img class="player-avatar" src="images/headimg.jpg" alt="">
+                                        <p class="player-nickname">大波女孩</p>
+                                        <p class="player-score">34</p>
+                                    </div>
+                                </div>
+                                <div class="match-result-wrapper-body-right">
+                                    <p class="bold-font win">Win</p>
+                                </div>
+                            </div>
+                            <div class="match-result-wrapper-footer">
+                                <p class="match-date small-font smallsize-font">2017-11-21 星期一 13:52</p>
+                                <p class="match-location small-font smallsize-font" style="text-align: right">塞伯坦星球</p>
+                                <p class="match-location small-font smallsize-font" style="text-align: right">查看视频</p>
+                            </div>
+                        </div>
+        
+                        <div class="match-result-wrapper">
+                            <div class="match-result-wrapper-body">
+                                <div class="match-result-wrapper-body-left">
+                                    <div class="player-detail">
+                                        <img class="player-avatar" src="images/headimg.jpg" alt="">
+                                        <p class="player-nickname">孙悟空</p>
+                                        <p class="player-score">36</p>
+                                    </div>
+                                    <div class="player-detail">
+                                        <img class="player-avatar" src="images/headimg.jpg" alt="">
+                                        <p class="player-nickname">大波女孩</p>
+                                        <p class="player-score lose">38</p>
+                                    </div>
+                                </div>
+                                <div class="match-result-wrapper-body-right">
+                                    <p class="bold-font lose">Lose</p>
+                                </div>
+                            </div>
+                            <div class="match-result-wrapper-footer">
+                                <p class="match-date small-font smallsize-font">2017-11-21 星期一 13:52</p>
+                                <p class="match-location small-font smallsize-font" style="text-align: right">塞伯坦星球</p>
+                                <p class="match-location small-font smallsize-font" style="text-align: right">查看视频</p>
+                            </div>
+                        </div>
+
+                        <div class="match-result-wrapper">
+                            <div class="match-result-wrapper-body">
+                                <div class="match-result-wrapper-body-left">
+                                    <div class="player-detail">
+                                        <img class="player-avatar" src="images/headimg.jpg" alt="">
+                                        <p class="player-nickname">孙悟空</p>
+                                        <p class="player-score">36</p>
+                                    </div>
+                                    <div class="player-detail">
+                                        <img class="player-avatar" src="images/headimg.jpg" alt="">
+                                        <p class="player-nickname">大波女孩</p>
+                                        <p class="player-score lose">38</p>
+                                    </div>
+                                </div>
+                                <div class="match-result-wrapper-body-right">
+                                    <p class="bold-font lose">Lose</p>
+                                </div>
+                            </div>
+                            <div class="match-result-wrapper-footer">
+                                <p class="match-date small-font smallsize-font">2017-11-21 星期一 13:52</p>
+                                <p class="match-location small-font smallsize-font" style="text-align: right">塞伯坦星球</p>
+                                <p class="match-location small-font smallsize-font" style="text-align: right">查看视频</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 </body>
 
 </html>
