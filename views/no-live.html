@@ -9,62 +9,56 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.bootcss.com/Buttons/2.0.0/css/buttons.min.css">
+    <link href="https://cdn.bootcss.com/video.js/6.3.3/alt/video-js-cdn.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/public/stylesheets/style.css"> </head>
 
 <body>
     <div class="container" style="padding: 0; background: #e9e9e9">
         <div class="row">
-            <video src=""></video>
+            <video playsinline id="" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" poster='/public/images/video-postimg.jpg' data-setup='{}' style="width: 100%; min-height: 250px">
+                <source src="https://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />
+                <source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm' /> </video>
         </div>
         <div class="row live-info-container" style="background: white"> <img src="/public/images/live-info.png" alt="" style="width: 100%">
             <ul class="list-group">
                 <li class="list-item live-list-item">
                     <div class="live-wrapper">
-                        <div class="live-wrapper-left">
-                            <img src="http://via.placeholder.com/80x80" alt="" style="border-radius: 40px"> 
+                        <div class="live-wrapper-left"> <img src="http://via.placeholder.com/80x80" alt="" style="border-radius: 40px">
                             <p style="text-align: center">Tom</p>
                         </div>
                         <div class="live-wrapper-middle">
-                            <p>NBA 2K18中国区资格赛16进8</p>
-                            <a href="#" class="guess-button button button-primary button-pill button-small">可竞猜</a>
+                            <p>NBA 2K18中国区资格赛16进8</p> <a href="#" class="guess-button button button-primary button-pill button-small">可竞猜</a>
                             <p>3小时后</p>
                         </div>
-                        <div class="live-wrapper-right">
-                            <img src="http://via.placeholder.com/80x80" alt="" style="border-radius: 40px"> 
+                        <div class="live-wrapper-right"> <img src="http://via.placeholder.com/80x80" alt="" style="border-radius: 40px">
                             <p style="text-align: center">Jack</p>
                         </div>
                     </div>
                 </li>
                 <li class="list-item live-list-item">
                     <div class="live-wrapper">
-                        <div class="live-wrapper-left">
-                            <img src="http://via.placeholder.com/80x80" alt="" style="border-radius: 40px"> 
+                        <div class="live-wrapper-left"> <img src="http://via.placeholder.com/80x80" alt="" style="border-radius: 40px">
                             <p style="text-align: center">Tom</p>
                         </div>
                         <div class="live-wrapper-middle">
-                            <p>NBA 2K18中国区资格赛16进8</p>
-                            <a href="#" class="guess-button button button-primary button-pill button-small">可竞猜</a>
+                            <p>NBA 2K18中国区资格赛16进8</p> <a href="#" class="guess-button button button-primary button-pill button-small">可竞猜</a>
                             <p>3小时后</p>
                         </div>
-                        <div class="live-wrapper-right">
-                            <img src="http://via.placeholder.com/80x80" alt="" style="border-radius: 40px"> 
+                        <div class="live-wrapper-right"> <img src="http://via.placeholder.com/80x80" alt="" style="border-radius: 40px">
                             <p style="text-align: center">Jack</p>
                         </div>
                     </div>
                 </li>
                 <li class="list-item live-list-item">
                     <div class="live-wrapper">
-                        <div class="live-wrapper-left">
-                            <img src="http://via.placeholder.com/80x80" alt="" style="border-radius: 40px"> 
+                        <div class="live-wrapper-left"> <img src="http://via.placeholder.com/80x80" alt="" style="border-radius: 40px">
                             <p style="text-align: center">Tom</p>
                         </div>
                         <div class="live-wrapper-middle">
-                            <p>NBA 2K18中国区资格赛16进8</p>
-                            <a href="#" class="guess-button button button-primary button-pill button-small">可竞猜</a>
+                            <p>NBA 2K18中国区资格赛16进8</p> <a href="#" class="guess-button button button-primary button-pill button-small">可竞猜</a>
                             <p>3小时后</p>
                         </div>
-                        <div class="live-wrapper-right">
-                            <img src="http://via.placeholder.com/80x80" alt="" style="border-radius: 40px"> 
+                        <div class="live-wrapper-right"> <img src="http://via.placeholder.com/80x80" alt="" style="border-radius: 40px">
                             <p style="text-align: center">Jack</p>
                         </div>
                     </div>
@@ -107,8 +101,10 @@
             </div>
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/video.js/6.3.3/video.min.js"></script>
+    <script src="https://cdn.bootcss.com/video.js/6.3.3/lang/zh-CN.js"></script>
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
 </body>
 
 </html>

@@ -653,6 +653,10 @@ p {
     color: #fe3636;
 }
 
+.blue {
+    color: #0e2bbe;
+}
+
 .item-left h5 {
     font-size: 16px;
     font-weight: bold;
@@ -696,7 +700,6 @@ p {
     display: flex;
     justify-content: space-between;
     padding: 20px 20px;
-    
 }
 
 .live-wrapper-middle {
@@ -719,4 +722,246 @@ p {
     max-width: 100px;
     margin: 0 auto;
     background-color: #2c56f3;
+}
+
+
+/* VideoJs*/
+
+.video-js {
+    /* The base font size controls the size of everything, not just text.
+     All dimensions use em-based sizes so that the scale along with the font size.
+     Try increasing it to 15px and see what happens. */
+    font-size: 10px;
+    /* The main font color changes the ICON COLORS as well as the text */
+    color: #fff;
+}
+
+
+/* The "Big Play Button" is the play button that shows before the video plays.
+   To center it set the align values to center and middle. The typical location
+   of the button is the center, but there is trend towards moving it to a corner
+   where it gets out of the way of valuable content in the poster image.*/
+
+.vjs-default-skin .vjs-big-play-button {
+    /* The font size is what makes the big play button...big. 
+     All width/height values use ems, which are a multiple of the font size.
+     If the .video-js font-size is 10px, then 3em equals 30px.*/
+    font-size: 3em;
+    /* We're using SCSS vars here because the values are used in multiple places.
+     Now that font size is set, the following em values will be a multiple of the
+     new font size. If the font-size is 3em (30px), then setting any of
+     the following values to 3em would equal 30px. 3 * font-size. */
+    /* 1.5em = 45px default */
+    line-height: 1.5em;
+    height: 1.5em;
+    width: 3em;
+    /* 0.06666em = 2px default */
+    border: 0.06666em solid #fff;
+    /* 0.3em = 9px default */
+    border-radius: 0.3em;
+    /* Align center */
+    left: 50%;
+    top: 50%;
+    margin-left: -1.5em;
+    margin-top: -0.75em;
+}
+
+
+/* The default color of control backgrounds is mostly black but with a little
+   bit of blue so it can still be seen on all-black video frames, which are common. */
+
+.video-js .vjs-control-bar,
+.video-js .vjs-big-play-button,
+.video-js .vjs-menu-button .vjs-menu-content {
+    /* IE8 - has no alpha support */
+    background-color: #2B333F;
+    /* Opacity: 1.0 = 100%, 0.0 = 0% */
+    background-color: rgba(43, 51, 63, 0.7);
+}
+
+.video-js .vjs-big-play-button {
+    font-size: 2.5em;
+    line-height: 2.3em;
+    height: 2.5em;
+    width: 2.5em;
+    -webkit-border-radius: 2.5em;
+    -moz-border-radius: 2.5em;
+    border-radius: 2.5em;
+    background-color: #73859f;
+    background-color: rgba(115, 133, 159, 0.5);
+    border-width: 0.1em;
+    margin-top: -1.25em;
+    margin-left: -1.25em;
+}
+
+.video-js.vjs-playing .vjs-tech {
+    pointer-events: auto;
+}
+
+
+/* 中间的播放箭头 */
+
+.vjs-big-play-button .vjs-icon-placeholder {
+    font-size: 1.63em;
+}
+
+
+/* 加载圆圈 */
+
+.vjs-loading-spinner {
+    font-size: 2.5em;
+    width: 1em;
+    height: 2em;
+    border-radius: 1em;
+    /*    border-bottom-right-radius: none;*/
+    margin-top: -1em;
+    margin-left: -1.5em;
+}
+
+.vjs-paused .vjs-big-play-button,
+.vjs-paused.vjs-has-started .vjs-big-play-button {
+    display: block;
+}
+
+
+/* Slider - used for Volume bar and Progress bar */
+
+.video-js .vjs-slider {
+    background-color: #73859f;
+    background-color: rgba(115, 133, 159, 0.5);
+}
+
+
+/* The slider bar color is used for the progress bar and the volume bar
+   (the first two can be removed after a fix that's coming) */
+
+.video-js .vjs-volume-level,
+.video-js .vjs-play-progress,
+.video-js .vjs-slider-bar {
+    background: #fff;
+}
+
+
+/* The main progress bar also has a bar that shows how much has been loaded. */
+
+.video-js .vjs-load-progress {
+    /* For IE8 we'll lighten the color */
+    background: #bfc7d3;
+    /* Otherwise we'll rely on stacked opacities */
+    background: rgba(115, 133, 159, 0.5);
+}
+
+
+/* The load progress bar also has internal divs that represent
+   smaller disconnected loaded time ranges */
+
+.video-js .vjs-load-progress div {
+    /* For IE8 we'll lighten the color */
+    background: white;
+    /* Otherwise we'll rely on stacked opacities */
+    background: rgba(115, 133, 159, 0.75);
+}
+
+
+/*Dual container*/
+
+.dual-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dual-container .side {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 45%;
+    height: 3em;
+    position: relative;
+    margin: 0;
+    color: #fff;
+}
+
+.dual-container .left {
+    background: #cb2237;
+    padding: 0 3em 0 0;
+}
+
+.dual-container .left:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom: 3em solid #fff;
+    border-left: 3em solid transparent;
+}
+
+.dual-container .right {
+    background: #0e2bbe;
+    padding: 0 0 0 3em;
+}
+
+.dual-container .right:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 3em solid #fff;
+    border-right: 3em solid transparent;
+}
+
+.scoreLabel {
+    font-size: 1.4em;
+    line-height: 1.2em;
+    text-align: center;
+    width: 100%;
+}
+
+
+/*Guess container*/
+
+.guess-container {
+    margin: 10px 0;
+    min-height: 20%;
+    max-height: 300px;
+    overflow: scroll;
+}
+
+.guess-container .button-group {
+    height: 2em;
+    width: 90%;
+}
+
+.guess-container .button p{
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+.guess-container .button-default     {
+    background: white;
+    border: 1px solid #e5e5e5;
+    
+}
+
+.guess-container .panel-heading {
+    background: white;
+    border: none;
+}
+
+.guess-container .panel-body {
+    padding: 0;
+    margin: 0;
+}
+
+.guess-container .panel-footer {
+    background: white;
+    border: none;
+}
+
+.guess-container button {
+    width: 50%;
+    height: 100%;
+}
+
+#GuessModal .modal-dialog {
+        top: 30%;
 }

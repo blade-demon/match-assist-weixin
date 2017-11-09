@@ -6,20 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>电竞助手</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="stylesheets/style.css"> </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://cdn.bootcss.com/video.js/6.3.3/alt/video-js-cdn.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/stylesheets/style.css">
+</head>
 
 <body>
     <div class="container" style="padding: 0">
-        
         <div class="row">
-            <video src="http://www.w3school.com.cn/i/movie.ogg" poster="/public/images/video-postimg.jpg" controls style="width: 100%"></video>
-        </div>
+            <video playsinline id="" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" poster='/public/images/video-postimg.jpg' data-setup='{}' style="width: 100%; min-height: 250px">
+                <source src="https://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />
+                <source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm' /> </video>
+        </div> <img src="/public/images/battle-info.jpg" style="width: 100%" alt="">
+        <div class="battle-info-wrapper">
+            <div class="top-wrapper" style="display: flex; justify-content: space-between">
+                <div class="player-left-Info text-center" style="position: relative">
+                    <img src="/public/images/player-avatar.jpg" alt="" style="width:50%;border-radius: 50%;z-index:2">
+                    <img src="/public/images/HOU.svg" alt="" style="width:30%;border-radius: 50%;  margin-left: -10%; box-shadow: 0px 2px 4px;z-index:-2">
 
-        <div class="row" style="padding: 0"> <img src="/public/images/comment-detail.jpg" alt="" style="padding: 0px; width: 100%">
-            <p style="line-height: 1.6em; text-indent: 2em">刷数据这件事情在NBA历史上从来都不罕见，除却最 著名的张伯伦100分之战外，大到大卫·汤普森和 乔治·格文、沙克·奥尼尔和大卫·罗宾逊这两次得分王之 争；小到里基·戴维斯往自家篮筐投篮刷篮板——历史记住 了这些事情，可绝不是把它们当榜样来歌颂的。</p>
-            <p style="line-height: 1.6em; text-indent: 2em">哈登不爽的原因很简单，凯尔文·墨菲在1978年创造 的队史得分纪录不过是57分，在第四节连续3次跳投尝试 不进后，哈登爽快地放弃了破纪录尝试。以登哥如今的比赛 智慧，他很明白：这1分得不得、这纪录破不破，对于他的 生涯成就不会有丝毫影响，正如哈基姆·奥拉朱旺先生甚至 不在火箭队史单场得分前5名之列，可在队史第一人宝座上 的位置却绝不会发生半点松动。 </p>
+                    <h4>帅的不行</h4>
+                    <p class="small">总场数：9 胜率： 0</p>
+                </div>
+                <div class="match-detail" style="flex: 1 1 auto; min-width: 100px">
+                    <h2><span class="red">46</span> - <span class="blue">45</span></h2>
+                    <p>总时长： 20min</p>
+                </div>
+                <div class="player-right-Info text-center" style="position: relative;">
+                    <div style="display: inline">
+                        <img src="/public/images/DAL.svg" alt="" style="width:30%;border-radius: 50%; z-index: -1; margin-right: -10%;box-shadow: 0px 2px 4px">
+                    </div>
+                    <img src="/public/images/player-avatar.jpg" alt="" style="width:50%;height:;border-radius: 50%;">
+                    <h4>我就是帅</h4>
+                    <p class="small">总场数：9 胜率： 0</p>
+                </div>
+            </div>
+            <div class="bottom-wrapper">
+                <div class="dual-container">
+                    <!--
+                    <div class="row">
+                        <div class="col-xs-3 text-left" style="padding: 0 10px"> 总场数：9 </div>
+                        <div class="col-xs-3 text-left" style="padding: 0"> 胜率：0 </div>
+                        <div class="col-xs-3 text-right" style="padding: 0"> 总场数：9 </div>
+                        <div class="col-xs-3 text-right" style="padding: 0 10px"> 胜率：0 </div>
+                    </div>
+-->
+                    <div class="side left">
+                        <p class="scoreLabel">0 胜 0 负</p>
+                    </div>
+                    <div class="side right">
+                        <p class="scoreLabel">0 胜 0 负</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin: 20px 0px"> <img src="/public/images/comment-detail.jpg" alt="" style="padding: 0px; width: 100%">
+            <section style="padding: 0px 10px;">
+                <p style="line-height: 1.6em; text-indent: 2em">刷数据这件事情在NBA历史上从来都不罕见，除却最 著名的张伯伦100分之战外，大到大卫·汤普森和 乔治·格文、沙克·奥尼尔和大卫·罗宾逊这两次得分王之 争；小到里基·戴维斯往自家篮筐投篮刷篮板——历史记住 了这些事情，可绝不是把它们当榜样来歌颂的。</p>
+                <p style="line-height: 1.6em; text-indent: 2em">哈登不爽的原因很简单，凯尔文·墨菲在1978年创造 的队史得分纪录不过是57分，在第四节连续3次跳投尝试 不进后，哈登爽快地放弃了破纪录尝试。以登哥如今的比赛 智慧，他很明白：这1分得不得、这纪录破不破，对于他的 生涯成就不会有丝毫影响，正如哈基姆·奥拉朱旺先生甚至 不在火箭队史单场得分前5名之列，可在队史第一人宝座上 的位置却绝不会发生半点松动。 </p>
+            </section>
             <!--
             <div class="col-xs-5 player-Info-wrapper">
                 <p>玩家1</p>
@@ -34,6 +78,8 @@
             </div>
 --></div>
     </div>
+    <script src="https://cdn.bootcss.com/video.js/6.3.3/video.min.js"></script>
+    <script src="https://cdn.bootcss.com/video.js/6.3.3/lang/zh-CN.js"></script>
 </body>
 
 </html>

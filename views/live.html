@@ -7,49 +7,148 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>电竞助手</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link href="https://cdn.bootcss.com/Buttons/2.0.0/css/buttons.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/video.js/6.3.3/alt/video-js-cdn.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/limonte-sweetalert2/6.10.1/sweetalert2.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/stylesheets/style.css">
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" style="padding: 0; background: #eae9e9">
         <div class="row">
-            <video width="100%" src="http://www.w3school.com.cn/i/movie.ogg" controls></video> 
+            <video playsinline id="" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" poster='/public/images/video-postimg.jpg' data-setup='{}' style="width: 100%; min-height: 250px">
+                <source src="https://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />
+                <source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm' /> </video>
         </div>
-        <div class="row">
-            <img src="/public/images/battle-info.jpg" alt="" style="width: 100%">
-            <div class="col-xs-6">
-                <p>章三</p>
-                <p>最近战绩：3-1</p>
-                <p>赔率：0.98</p>
-            </div>
-            <div class="col-xs-6">
-                <p>里斯</p>
-                <p>最近战绩：3-1</p>
-                <p>赔率：1.1</p>
+        <div class="row" style="background: white">
+            <div class="battle-info-wrapper">
+                <img src="/public/images/battle-info.png" alt="" style="width: 100%">
+                <div class="top-wrapper" style="display: flex; justify-content: space-between">
+                    <div class="player-left-Info text-center" style="position: relative">
+                        <img src="/public/images/player-avatar.jpg" alt="" style="width:50%;border-radius: 50%;z-index:2">
+                        <img src="/public/images/HOU.svg" alt="" style="width:30%;border-radius: 50%;  margin-left: -10%; box-shadow: 0px 2px 4px;z-index:-2">
+
+                        <h4>帅的不行</h4>
+                        <p class="small">总场数：9 胜率： 0</p>
+                    </div>
+                    <div class="match-detail" style="flex: 1 1 auto; min-width: 50px">
+                        <img src="/public/images/vs.jpg" alt="" style="width: 100%">
+                    </div>
+                    <div class="player-right-Info text-center" style="position: relative;">
+                        <div style="display: inline">
+                            <img src="/public/images/DAL.svg" alt="" style="width:30%;border-radius: 50%; z-index: -1; margin-right: -10%;box-shadow: 0px 2px 4px">
+                        </div>
+                        <img src="/public/images/player-avatar.jpg" alt="" style="width:50%;height:;border-radius: 50%;">
+                        <h4>我就是帅</h4>
+                        <p class="small">总场数：9 胜率： 0</p>
+                    </div>
+                </div>
+                <div class="bottom-wrapper">
+                    <div class="dual-container">
+                        <!--
+                    <div class="row">
+                        <div class="col-xs-3 text-left" style="padding: 0 10px"> 总场数：9 </div>
+                        <div class="col-xs-3 text-left" style="padding: 0"> 胜率：0 </div>
+                        <div class="col-xs-3 text-right" style="padding: 0"> 总场数：9 </div>
+                        <div class="col-xs-3 text-right" style="padding: 0 10px"> 胜率：0 </div>
+                    </div>
+-->
+                        <div class="side left">
+                            <p class="scoreLabel">0 胜 0 负</p>
+                        </div>
+                        <div class="side right">
+                            <p class="scoreLabel">0 胜 0 负</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <h3>竞猜</h3>
-            <hr>
-            <ul>
-                <li class="question">
-                    <label>谁会投进更多的三分球？</label>
-                    <br>
-                    <input type="radio" name="q1"> 章三
-                    <input type="radio" name="q1"> 里斯
-                </li>
-                <li class="question">
-                    <label>谁会赢得最后的胜利？</label>
-                    <br>
-                    <input type="radio" name="q2"> 章三
-                    <input type="radio" name="q2"> 里斯
-                </li>
-            </ul>
+        <div class="row guess-container">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">全场胜负</h3>
+                </div>
+                <div class="panel-body text-center">
+                    <div class="button-group">
+                        <button type="button" class="button button-default" data-toggle="modal" data-target="#GuessModal"><p>主队</p></button>
+                        <button type="button" class="button button-default" data-toggle="modal" data-target="#GuessModal"><p>客队</p></button>
+                    </div>
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">第一个三分</h3>
+                </div>
+                <div class="panel-body text-center">
+                    <div class="button-group">
+                        <button type="button" class="button button-default" data-toggle="modal" data-target="#GuessModal"><p>主队</p></button>
+                        <button type="button" class="button button-default" data-toggle="modal" data-target="#GuessModal"><p>客队</p></button>
+                    </div>
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">全场胜负</h3>
+                </div>
+                <div class="panel-body text-center">
+                    <div class="button-group">
+                        <button type="button" class="button button-default" data-toggle="modal" data-target="#GuessModal"><p>主队</p></button>
+                        <button type="button" class="button button-default" data-toggle="modal" data-target="#GuessModal"><p>客队</p></button>
+                    </div>
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">第一个三分</h3>
+                </div>
+                <div class="panel-body text-center">
+                    <div class="button-group">
+                        <button type="button" class="button button-default" data-toggle="modal" data-target="#GuessModal"><p>主队</p></button>
+                        <button type="button" class="button button-default" data-toggle="modal" data-target="#GuessModal"><p>客队</p></button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Guess Modal -->
+    <div class="modal fade" id="GuessModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center" style="border: none; padding: 10px 10px 0px">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">全场胜负</h4>
+                </div>
+                <div class="modal-body text-center" style="padding:0 0 10px 0">
+                    <h4 class="red">主胜</h4>
+                    <p class="grey">谦虚公子 VS 我就是帅</p>
+                </div>
+                <div class="modal-footer" style="display: flex;padding: 0;">
+                    <div class="input-gold-wrapper" style="display: flex; flex: 1 1 auto;flex-direction: column; padding: 5px">
+                        <div style="display: flex;flex: 1 1 auto; align-items: center">
+                            <div class="col-xs-6" style="padding:0 2px;line-height: 2em; font-size: 1em; text-align: left">余额 100</div>
+                            <div class="col-xs-6" style="padding:0 5px;line-height: 2em; font-size: 1em;"><a href="#">充值</a></div>
+                        </div>
+                        <input type="text" class="form-control" placeholder="金豆数量" style="background: #e0dfdf">
+                    </div>
+                    <button type="button" class="btn btn-default btn-block" style="background: red; color: white; width: 50%">
+                        <p>预计获得200金豆</p>
+                        <h4><strong>竞猜</strong></h4>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/limonte-sweetalert2/6.10.1/sweetalert2.js"></script>
+    <script src="https://cdn.bootcss.com/video.js/6.3.3/video.min.js"></script>
+    <script src="https://cdn.bootcss.com/video.js/6.3.3/lang/zh-CN.js"></script>
+    <script src="/public/js/live.js"></script>
 </body>
 
 </html>
