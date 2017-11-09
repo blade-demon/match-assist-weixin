@@ -71,6 +71,11 @@ router.get('/guess', function(req, res, next) {
     res.render('guess');
 });
 
+router.get('/gold_record', function(req, res, next) {
+    res.render('gold_record');
+});
+
+
 /**
  * 竞猜结果分享
  */
