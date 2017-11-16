@@ -57,9 +57,51 @@ video {
     text-align: center;
 }
 
-.profile_headimg {
+.profile-gold-wrap {
+    display: flex;
+    text-align: center;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.profile-gold-wrap p {
+    color: white;
+    flex: 1;
+    margin: 0 auto;
+    text-align: right;
+    padding-right: 10%;
+}
+
+.profile-gold-wrap a {
+    color: white;
+    flex: 1;
+    text-align: left;
+    border-left: 1px solid;
+    padding-left: 10%;
+    text-decoration: none;
+}
+
+#gold-number {
+    font-size: 2rem;
+     display:inline-block;
+      margin-top:5px;
+       padding-left: 10px;
+}
+
+.profile-headimg {
     margin: 20px auto;
     width: 30%;
+    border-radius: 50%;
+}
+
+.profile-nickname {
+    color: white;
+    font-size: 1.2em;
+}
+
+.profile-id {
+    color: white;
+    font-size: 1em;
 }
 
 
@@ -124,7 +166,7 @@ video {
     margin: 20px auto;
     width: 90%;
     height: 200px;
-    background: url('/images/tournament-cover-2.jpg') center center no-repeat;
+    background: url('https://storeapp.blob.core.chinacloudapi.cn/esports-assist/tournament-cover-2.jpg') center center no-repeat;
     background-size: cover;
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
@@ -138,7 +180,7 @@ video {
     margin: 20px auto;
     width: 90%;
     height: 200px;
-    background: url('/images/tournament-leaderboard-cover.jpg') center center no-repeat;
+    background: url('https://storeapp.blob.core.chinacloudapi.cn/esports-assist/tournament-leaderboard-cover.jpg') center center no-repeat;
     background-size: cover;
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
@@ -284,6 +326,10 @@ video {
 .player-detail {
     display: flex;
     flex: 1 1 auto;
+}
+
+.player-detail p {
+    margin: 0;
 }
 
 .player-avatar {
@@ -930,16 +976,15 @@ p {
     width: 90%;
 }
 
-.guess-container .button p{
+.guess-container .button p {
     line-height: 1em;
     margin: 0;
     padding: 0;
 }
 
-.guess-container .button-default     {
+.guess-container .button-default {
     background: white;
     border: 1px solid #e5e5e5;
-    
 }
 
 .guess-container .panel-heading {
@@ -963,5 +1008,5 @@ p {
 }
 
 #GuessModal .modal-dialog {
-        top: 30%;
+    top: 30%;
 }

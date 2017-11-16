@@ -12,16 +12,24 @@
 
 <body style="background: #eae9e9;">
     <div class="container profile-container">
-        <div class="heading-left"> <img src="http://via.placeholder.com/80x80" alt="" style="border-radius: 40px; width: 100%; box-shadow: 0px 0px 15px #ccc"> </div>
+        <div class="heading-left">
+            <img src="http://via.placeholder.com/80x80" alt="" style="border-radius: 40px; width: 100%; box-shadow: 0px 0px 15px #ccc"> </div>
         <div class="heading-middle text-left">
             <p>会飞的猪</p>
-            <p>金豆: <span style="color: #fb0d0d">100</span></p>
+            <p>金豆:
+                <span style="color: #fb0d0d">100</span>
+            </p>
         </div>
         <div class="heading-right">
-            <div style="display: inline-block; color: #c6c6c6; margin: 25px 10px"> <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> </div>
+            <div style="display: inline-block; color: #c6c6c6; margin: 25px 10px">
+                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+            </div>
         </div>
-        <div class="heading-right"> <img src="/images/store-icon.png" alt="" style="width: 50px;">
-            <p class="text-center" style="margin-top: 5px; font-size: 60%">金豆商城</p>
+        <div class="heading-right">
+            <a href="/store" style="text-decoration: none">
+                <img src="/images/store-icon.png" alt="" style="width: 50px;">
+                <p class="text-center" style="margin-top: 5px; font-size: 60%">金豆商城</p>
+            </a>
         </div>
     </div>
     <div class="container guess-record-container">
@@ -46,7 +54,9 @@
                             <p class="small">2017-11-21 13:52</p>
                         </div>
                         <div class="item-right">
-                            <p class="grey">等待开奖 <span class="glyphicon glyphicon-chevron-right" style="padding-left: 10px"></span></p>
+                            <p class="grey">等待开奖
+                                <span class="glyphicon glyphicon-chevron-right" style="padding-left: 10px"></span>
+                            </p>
                         </div>
                     </li>
                     <li class="list-group-item list-item">
@@ -56,7 +66,11 @@
                             <p class="small">2017-11-21 13:52</p>
                         </div>
                         <div class="item-right">
-                            <p>已开奖 <span class="glyphicon glyphicon-chevron-right" style="padding-left: 10px"></span></p>
+                            <a href="/guess">
+                            <p>已开奖
+                                <span class="glyphicon glyphicon-chevron-right" style="padding-left: 10px"></span>
+                            </p>
+                        </a>
                         </div>
                     </li>
 
@@ -67,7 +81,9 @@
                             <p class="small">2017-11-21 13:52</p>
                         </div>
                         <div class="item-right">
-                            <p>已开奖 <span class="glyphicon glyphicon-chevron-right" style="padding-left: 10px"></span></p>
+                            <p>已开奖
+                                <span class="glyphicon glyphicon-chevron-right" style="padding-left: 10px"></span>
+                            </p>
                         </div>
                     </li>
                 </ul>
@@ -80,7 +96,8 @@
                             <p class="small">2017-11-21 13:52</p>
                         </div>
                         <div class="item-right">
-                            <p><span class="gold-number red">+100&nbsp;</span>金豆</p>
+                            <p>
+                                <span class="gold-number red">+100&nbsp;</span>金豆</p>
                         </div>
                     </li>
                     <li class="list-group-item list-item">
@@ -89,7 +106,8 @@
                             <p class="small">2017-11-21 13:52</p>
                         </div>
                         <div class="item-right">
-                            <p><span class="gold-number">-100&nbsp;</span>金豆</p>
+                            <p>
+                                <span class="gold-number">-100&nbsp;</span>金豆</p>
                         </div>
                     </li>
                     <li class="list-group-item list-item">
@@ -98,7 +116,8 @@
                             <p class="small">2017-11-21 13:52</p>
                         </div>
                         <div class="item-right">
-                            <p><span class="gold-number red" style="padding-left: 10px;">+100&nbsp;</span>金豆</p>
+                            <p>
+                                <span class="gold-number red" style="padding-left: 10px;">+100&nbsp;</span>金豆</p>
                         </div>
                     </li>
                     <li class="list-group-item list-item">
@@ -107,7 +126,8 @@
                             <p class="small">2017-11-21 13:52</p>
                         </div>
                         <div class="item-right">
-                            <p><span class="gold-number">-100&nbsp;</span>金豆</p>
+                            <p>
+                                <span class="gold-number">-100&nbsp;</span>金豆</p>
                         </div>
                     </li>
                 </ul>
@@ -115,13 +135,13 @@
         </div>
     </div>
 </body>
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
-    $(function() {
+    $(function () {
         console.log("js works.");
         // 检测radio选中的值
-        $("input[name='tabs']").change(function() {
+        $("input[name='tabs']").change(function () {
             if ($(this).val() === 'record') {
                 $("#content1").css("display", "block");
                 $("#content2").css("display", "none");
@@ -132,4 +152,5 @@
         });
     });
 </script>
+
 </html>

@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>电竞助手</title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
@@ -16,17 +17,25 @@
         <div class="row">
             <div class="col-xs-12" style="padding:0px 0px">
                 <div class="profile_wrapper">
-                    <img class="profile_headimg" src="images/headimg.jpg" alt="">
-                    <p style="color: white; font-size: 1.2em">祖国的一朵枪</p>
-                    <p style="color: white; font-size: 1em">ID:8898974</p>
-                    <p style="color: white; display:inline-block; padding: 0px 10%;">金豆 <span style="font-size: 2rem; display:inline-block; margin-top:5px; padding-left: 10px">100</span></p>
-                    <a style="color: white; display:inline-block; padding: 0px 10%;border-left: 1px solid" href="/gold_record">查看记录 <span style="padding-left: 10px">> </span></a>
+                    <img class="profile-headimg" src="images/headimg.jpg" alt="选手头像">
+                    <p class="profile-nickname">未知选手</p>
+                    <p class="profile-id">ID:00000000</p>
+                    <div class="profile-gold-wrap">
+                        <p>金豆
+                            <span id="gold-number">000</span>
+                        </p>
+                        <a id="goldGuessRecord" href="/gold_record?GEAccount=000">查看记录
+                            <span>&nbsp;></span>
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="divider-container">
-                <h3 class="title"><span> 我的赛程 </span>
+                <h3 class="title">
+                    <span> 我的赛程 </span>
                 </h3>
             </div>
             <div id="tournament3" style="border: 0px solid; position: relative ">
@@ -51,7 +60,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 text-center">
-                        <p><strong>2017-12-02 星期一</strong></p>
+                        <p>
+                            <strong>2017-12-02 星期一</strong>
+                        </p>
                     </div>
                     <div class="col-xs-4 text-center">
                         <img src="http://via.placeholder.com/80x80" alt="" style="border-radius:50%">
@@ -66,7 +77,9 @@
                         <p class="text-center" style="padding-top: 10px">孙悟空</p>
                     </div>
                     <div class="col-xs-12 text-center">
-                        <p>比赛地点：<strong>普陀区真北路958号</strong></p>
+                        <p>比赛地点：
+                            <strong>普陀区真北路958号</strong>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -125,7 +138,8 @@
     </div>
     <div class="row">
         <div class="divider-container">
-            <h3 class="title"><span> 其他赛事 </span>
+            <h3 class="title">
+                <span> 其他赛事 </span>
             </h3>
         </div>
         <div id="tournament1" class="wrapper " style="border: 0px solid ">
@@ -152,7 +166,9 @@
     </div>
     </div>
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/axios/0.17.1/axios.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/js/index.js"></script>
 </body>
 
 </html>
