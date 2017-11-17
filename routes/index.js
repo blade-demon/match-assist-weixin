@@ -8,6 +8,9 @@ router.get('/', function(req, res, next) {
     res.render('index');
 });
 
+router.get('/test', function(req, res) {
+    res.render('test');
+});
 /**
  * 查看为参加比赛的选手信息
  */
