@@ -691,6 +691,13 @@ p {
     display: flex;
 }
 
+.list-item a {
+    text-decoration: none;
+    color: black;
+    align-items: middle;
+    height: 100%;
+}
+
 .grey {
     color: #999999;
 }
