@@ -18,7 +18,7 @@
         <div class="row">
             <video playsinline id="live-video" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" poster='/images/video-postimg.jpg'
                 data-setup='{"techOrder": ["flash","html5"]}' style="width: 100%; min-height: 250px">
-                <source src="rtmp://live.hkstv.hk.lxdns.com/live/hks" type="rtmp/flv" />
+                <source src="rtmp://send1.douyu.com/live" type="rtmp/flv" />
             </video>
         </div>
         <div class="row" style="background: white">
@@ -173,7 +173,7 @@
     <script src="/js/lib/videojs-flash.min.js"></script>
     <script src="https://cdn.bootcss.com/video.js/6.3.3/lang/zh-CN.js"></script>
     <script>
-        videojs.options.flash.swf = 'js/lib/video-js.swf'; 
+        videojs.options.flash.swf = '/js/lib/video-js.swf'; 
     </script>
     <script src="/js/live.js"></script>
 
