@@ -16,9 +16,10 @@
 <body>
     <div class="container" style="padding: 0; background: #eae9e9">
         <div class="row">
-            <video playsinline id="" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" poster='/images/video-postimg.jpg' data-setup='{}' style="width: 100%; min-height: 250px">
-                <source src="https://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />
-                <source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm' /> </video>
+            <video playsinline id="live-video" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" poster='/images/video-postimg.jpg'
+                data-setup='{"techOrder": ["flash","html5"]}' style="width: 100%; min-height: 250px">
+                <source src="rtmp://live.hkstv.hk.lxdns.com/live/hks" type="rtmp/flv" />
+            </video>
         </div>
         <div class="row" style="background: white">
             <div class="battle-info-wrapper">
@@ -70,8 +71,12 @@
                 </div>
                 <div class="panel-body text-center">
                     <div class="button-group">
-                        <button type="button" class="button button-default" data-toggle="modal" data-target="#GuessModal"><p>主队</p></button>
-                        <button type="button" class="button button-default" data-toggle="modal" data-target="#GuessModal"><p>客队</p></button>
+                        <button type="button" class="button button-default" data-toggle="modal" data-target="#GuessModal">
+                            <p>主队</p>
+                        </button>
+                        <button type="button" class="button button-default" data-toggle="modal" data-target="#GuessModal">
+                            <p>客队</p>
+                        </button>
                     </div>
                 </div>
                 <div class="panel-footer"></div>
@@ -83,8 +88,12 @@
                 </div>
                 <div class="panel-body text-center">
                     <div class="button-group">
-                        <button type="button" class="button button-default" data-toggle="modal" data-target="#GuessModal"><p>主队</p></button>
-                        <button type="button" class="button button-default" data-toggle="modal" data-target="#GuessModal"><p>客队</p></button>
+                        <button type="button" class="button button-default" data-toggle="modal" data-target="#GuessModal">
+                            <p>主队</p>
+                        </button>
+                        <button type="button" class="button button-default" data-toggle="modal" data-target="#GuessModal">
+                            <p>客队</p>
+                        </button>
                     </div>
                 </div>
                 <div class="panel-footer"></div>
@@ -95,8 +104,12 @@
                 </div>
                 <div class="panel-body text-center">
                     <div class="button-group">
-                        <button type="button" class="button button-default" data-toggle="modal" data-target="#GuessModal"><p>主队</p></button>
-                        <button type="button" class="button button-default" data-toggle="modal" data-target="#GuessModal"><p>客队</p></button>
+                        <button type="button" class="button button-default" data-toggle="modal" data-target="#GuessModal">
+                            <p>主队</p>
+                        </button>
+                        <button type="button" class="button button-default" data-toggle="modal" data-target="#GuessModal">
+                            <p>客队</p>
+                        </button>
                     </div>
                 </div>
                 <div class="panel-footer"></div>
@@ -108,8 +121,12 @@
                 </div>
                 <div class="panel-body text-center">
                     <div class="button-group">
-                        <button type="button" class="button button-default" data-toggle="modal" data-target="#GuessModal"><p>主队</p></button>
-                        <button type="button" class="button button-default" data-toggle="modal" data-target="#GuessModal"><p>客队</p></button>
+                        <button type="button" class="button button-default" data-toggle="modal" data-target="#GuessModal">
+                            <p>主队</p>
+                        </button>
+                        <button type="button" class="button button-default" data-toggle="modal" data-target="#GuessModal">
+                            <p>客队</p>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -120,7 +137,9 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header text-center" style="border: none; padding: 10px 10px 0px">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                     <h4 class="modal-title" id="myModalLabel">全场胜负</h4>
                 </div>
                 <div class="modal-body text-center" style="padding:0 0 10px 0">
@@ -131,13 +150,17 @@
                     <div class="input-gold-wrapper" style="display: flex; flex: 1 1 auto;flex-direction: column; padding: 5px">
                         <div style="display: flex;flex: 1 1 auto; align-items: center">
                             <div class="col-xs-6" style="padding:0 2px;line-height: 2em; font-size: 1em; text-align: left">余额 100</div>
-                            <div class="col-xs-6" style="padding:0 5px;line-height: 2em; font-size: 1em;"><a href="#">充值</a></div>
+                            <div class="col-xs-6" style="padding:0 5px;line-height: 2em; font-size: 1em;">
+                                <a href="#">充值</a>
+                            </div>
                         </div>
                         <input type="text" class="form-control" placeholder="金豆数量" style="background: #e0dfdf">
                     </div>
                     <button type="button" class="btn btn-default btn-block" style="background: red; color: white; width: 50%">
                         <p>预计获得200金豆</p>
-                        <h4><strong>竞猜</strong></h4>
+                        <h4>
+                            <strong>竞猜</strong>
+                        </h4>
                     </button>
                 </div>
             </div>
@@ -147,8 +170,13 @@
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdn.bootcss.com/limonte-sweetalert2/6.10.1/sweetalert2.js"></script>
     <script src="https://cdn.bootcss.com/video.js/6.3.3/video.min.js"></script>
+    <script src="/js/lib/videojs-flash.min.js"></script>
     <script src="https://cdn.bootcss.com/video.js/6.3.3/lang/zh-CN.js"></script>
+    <script>
+        videojs.options.flash.swf = 'js/lib/video-js.swf'; 
+    </script>
     <script src="/js/live.js"></script>
+
 </body>
 
 </html>

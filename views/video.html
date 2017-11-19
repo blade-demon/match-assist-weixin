@@ -7,17 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>电竞助手</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://cdn.bootcss.com/video.js/6.3.3/alt/video-js-cdn.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/video.js/6.4.0/video-js.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/stylesheets/style.css">
+
 </head>
 
 <body>
     <div class="container" style="padding: 0">
         <div class="row">
-            <video playsinline id="" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" poster='/images/video-postimg.jpg'
+            <video playsinline id="live-video" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" poster='/images/video-postimg.jpg'
                 data-setup='{}' style="width: 100%; min-height: 250px">
-                <source src="https://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />
-                <source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm' /> </video>
+                <!-- <source src="https://staticlive.douyucdn.cn/common/share/play.swf?room_id=3555863"> -->
+            </video>
         </div>
         <img src="/images/battle-info.jpg" style="width: 100%" alt="">
         <div class="battle-info-wrapper">
@@ -71,24 +72,18 @@
                 <p style="line-height: 1.6em; text-indent: 2em">哈登不爽的原因很简单，凯尔文·墨菲在1978年创造 的队史得分纪录不过是57分，在第四节连续3次跳投尝试 不进后，哈登爽快地放弃了破纪录尝试。以登哥如今的比赛 智慧，他很明白：这1分得不得、这纪录破不破，对于他的
                     生涯成就不会有丝毫影响，正如哈基姆·奥拉朱旺先生甚至 不在火箭队史单场得分前5名之列，可在队史第一人宝座上 的位置却绝不会发生半点松动。 </p>
             </section>
-            <!--
-            <div class="col-xs-5 player-Info-wrapper">
-                <p>玩家1</p>
-                <p>姓名：<strong>章三</strong></p>
-                <p>赛区：<strong>华东赛区</strong></p>
-            </div>
-            <div class="col-xs-2"></div>
-            <div class="col-xs-5 player-Info-wrapper">
-                <p>玩家2</p>
-                <p>姓名：<strong>李四</strong></p>
-                <p>赛区：<strong>华东赛区</strong></p>
-            </div>
---></div>
+        </div>
     </div>
-    <script src="https://cdn.bootcss.com/video.js/6.3.3/video.min.js"></script>
-    <script src="https://cdn.bootcss.com/video.js/6.3.3/lang/zh-CN.js"></script>
+    <script src="https://cdn.bootcss.com/video.js/6.4.0/video.min.js"></script>
+    <script src="https://cdn.bootcss.com/video.js/6.4.0/lang/zh-CN.js"></script>
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/lib/videojs-flash.min.js"></script>
+    <script>
+        videojs.options.flash.swf = "https://vjs.zencdn.net/swf/5.4.1/video-js.swf";
+        var player = videojs("live-video", {techOrder: ['flash', 'html5']});
+    
+    </script>
 </body>
 
 </html>

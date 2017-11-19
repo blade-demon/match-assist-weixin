@@ -21,7 +21,7 @@
   1. 获取所有用户信息：http://portal.gamepoch.com/GEPortal/api/GEUsers
   2. 获取用户信息通过ID：http://portal.gamepoch.com/GEPortal/api/GEUsers/${ID}
   3. `通过unionid查找用户信息: http://portal.gamepoch.com/GEPortal/api/GEUsers?unionid=${unionid}`
-  4. `根据unionid获得用户的胜场和负场: http://portal.gamepoch.com/GEPortal/api/GEUsers?unionid=${unionid}`
+  4. `根据unionid获得用户的胜场和负场: http://portal.gamepoch.com/GEPortal/api/GEUsers/winlose?unionid=${unionid}`
 
   - 金豆类
   1. `获得金豆交易类型：http://portal.gamepoch.com/GEPortal/api/GEGoldTradeCodes`

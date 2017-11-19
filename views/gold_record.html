@@ -13,7 +13,7 @@
 <body style="background: #eae9e9;">
     <div class="container profile-container">
         <div class="heading-left">
-            <img src="http://via.placeholder.com/80x80" alt="" style="border-radius: 40px; width: 100%; box-shadow: 0px 0px 15px #ccc"> </div>
+            <img src="http://via.placeholder.com/80x80" alt="头像"> </div>
         <div class="heading-middle text-left">
             <p>会飞的猪</p>
             <p>金豆:
@@ -26,9 +26,9 @@
             </div>
         </div>
         <div class="heading-right">
-            <a href="/store">
-                <img src="/images/store-icon.png" alt="" style="width: 50px;">
-                <p class="text-center" style="margin-top: 5px; font-size: 60%">金豆商城</p>
+            <a href="/store"></a>
+            <img src="/images/store-icon.png" alt="" style="width: 50px;">
+            <p class="text-center" style="margin-top: 5px; font-size: 60%">金豆商城</p>
             </a>
         </div>
     </div>
@@ -49,26 +49,29 @@
                 <ul class="list-group" style="margin-bottom: 0px">
                     <li class="list-group-item list-item">
                         <div class="item-left">
-                            <h5>谦虚公子 VS 我就是帅</h5>
-                            <p class="small">100金豆</p>
-                            <p class="small">2017-11-21 13:52</p>
+                            <h5 class="bet-topic">玩家1 VS 玩家2</h5>
+                            <p class="small bet-consume">100金豆</p>
+                            <p class="small bet-time">2017-11-21 13:52</p>
                         </div>
                         <div class="item-right">
-                            <p class="grey">等待开奖
-                                <span class="glyphicon glyphicon-chevron-right" style="padding-left: 10px"></span>
-                            </p>
+                            <a href="/guess">
+                                <p class="grey">等待开奖
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </p>
+                            </a>
                         </div>
                     </li>
                     <li class="list-group-item list-item">
                         <div class="item-left">
                             <h5>谦虚公子 VS 我就是帅</h5>
-                            <p class="small">100金豆</p>
-                            <p class="small">2017-11-21 13:52</p>
+                            <p class="small bet-consume">100金豆</p>
+                            <p class="small bet-time">2017-11-21 13:52</p>
                         </div>
                         <div class="item-right">
                             <a href="/guess">
-                                <p>已开奖
-                                    <span class="glyphicon glyphicon-chevron-right" style="padding-left: 10px"></span>
+                                <p>
+                                    已开奖
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
                                 </p>
                             </a>
                         </div>
@@ -82,7 +85,8 @@
                         </div>
                         <div class="item-right">
                             <a href="/guess">
-                                <p>已开奖
+                                <p>
+                                    已开奖
                                     <span class="glyphicon glyphicon-chevron-right" style="padding-left: 10px"></span>
                                 </p>
                             </a>
@@ -138,21 +142,7 @@
     </div>
 </body>
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script>
-    $(function () {
-        console.log("js works.");
-        // 检测radio选中的值
-        $("input[name='tabs']").change(function () {
-            if ($(this).val() === 'record') {
-                $("#content1").css("display", "block");
-                $("#content2").css("display", "none");
-            } else {
-                $("#content1").css("display", "none");
-                $("#content2").css("display", "block");
-            }
-        });
-    });
-</script>
+<script src="https://cdn.bootcss.com/axios/0.17.1/axios.min.js"></script>
+<script src="/js/gold_record.js"></script>
 
 </html>

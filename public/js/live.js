@@ -1,5 +1,4 @@
 $(function () {
-    console.log(123);
 //    $('#myModal').modal();
 });
 
